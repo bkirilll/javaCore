@@ -1,6 +1,7 @@
 package org.example.sem3;
 
 import java.time.LocalDate;
+import java.util.Comparator;
 import java.util.TreeSet;
 
 public class Employee extends Person {
@@ -15,5 +16,4 @@ public class Employee extends Person {
             worker.increase(amount);
         }
     }
-
 }

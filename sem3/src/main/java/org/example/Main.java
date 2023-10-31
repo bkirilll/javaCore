@@ -3,7 +3,6 @@ package org.example;
 import org.example.sem3.Employee;
 import org.example.sem3.Manager;
 import org.example.sem3.Person;
-import org.example.sem3.PersonComparator;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -11,7 +10,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        TreeSet<Person> treeSet = new TreeSet<>(new PersonComparator());
+        TreeSet<Person> treeSet = new TreeSet<>(new Person.PersonComparator<>());
 
         Person person1 = new Employee("Oleg", "Olegovich", LocalDate.of(1990, 12, 2), 50000);
         Person person2 = new Employee("Ivan", "Ivanovich", LocalDate.of(2000, 9, 10),  60000);
