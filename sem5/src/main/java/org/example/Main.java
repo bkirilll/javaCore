@@ -4,6 +4,7 @@ package org.example;
 import org.example.hw.model.Student;
 import org.example.hw.services.StudentService;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -28,6 +29,17 @@ public class Main {
         StudentService studentService = new StudentService();
         studentService.bestStudentIt(studentList, "it", 4.5);
 
+
+
+
+
+    }
+
+
+    class Solution {
+        public char findTheDifference(String s, String t) {
+            char ch= t.substring(s.length());
+        }
     }
 
 
